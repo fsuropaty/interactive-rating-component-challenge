@@ -22,19 +22,23 @@
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
   <body class="bg-gray-900">
-    <div class="m-auto flex min-h-screen items-center justify-center">
+    <div
+      id="container"
+      class="m-auto flex min-h-screen items-center justify-center"
+    >
       <!-- Rating state start -->
       <div
         id="rating-card"
         class="w-ful m-6 grid h-[400px] w-[400px] gap-4 rounded-xl bg-gradient-to-tr from-Very-Dark-Blue to-Dark-Blue p-9"
       >
         <div
+          id="star-icon"
           class="flex h-10 w-10 items-center justify-center rounded-full bg-Dark-Blue"
         >
           <img src="./images/icon-star.svg" alt="" />
         </div>
-        <h1>How did we do?</h1>
-        <p>
+        <h1 id="title">How did we do?</h1>
+        <p id="description">
           Please let us know how we did with your support request. All feedback
           is appreciated to help us improve our offering!
         </p>
@@ -47,7 +51,7 @@
               id="rating-1"
               value="1"
               class="peer hidden"
-            /><label for="rating-1" class="rating-label">1</label>
+            /><label id="rating-1" for="rating-1" class="rating-label">1</label>
           </div>
           <div>
             <input
@@ -56,7 +60,7 @@
               id="rating-2"
               value="2"
               class="peer hidden"
-            /><label for="rating-2" class="rating-label">2</label>
+            /><label id="rating-2" for="rating-2" class="rating-label">2</label>
           </div>
           <div>
             <input
@@ -65,7 +69,7 @@
               id="rating-3"
               value="3"
               class="peer hidden"
-            /><label for="rating-3" class="rating-label">3</label>
+            /><label id="rating-3" for="rating-3" class="rating-label">3</label>
           </div>
           <div>
             <input
@@ -74,7 +78,7 @@
               id="rating-4"
               value="4"
               class="peer hidden"
-            /><label for="rating-4" class="rating-label">4</label>
+            /><label id="rating-4" for="rating-4" class="rating-label">4</label>
           </div>
           <div>
             <input
@@ -83,7 +87,7 @@
               id="rating-5"
               value="5"
               class="peer hidden"
-            /><label for="rating-5" class="rating-label">5</label>
+            /><label id="rating-5" for="rating-5" class="rating-label">5</label>
           </div>
         </form>
         <button
@@ -96,6 +100,7 @@
       </div>
     </div>
     <div
+      id="attribution"
       class="relative bottom-12 items-center justify-center text-center text-Medium-Grey"
     >
       Challenge by
@@ -111,9 +116,3 @@
     <script src="./app.js"></script>
   </body>
 </html>
-
-<!-- TODO:
-*Buat repository github
-*edit readme.md
-*upload solution 
--->
